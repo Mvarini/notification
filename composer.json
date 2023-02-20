@@ -1,0 +1,37 @@
+{
+    "name": "marcielalessandrovarini/notification",
+    "description": "This is a library that uses composer as the basis for generating email notifications",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Marcielalessandrovarini\\Notification\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marciel Varini",
+            "email": "marciel_mav@hotmail.com",
+            "homepage": "https://www.upinside.com.br",
+            "role": "Developer"
+        },
+        {
+            "name": "Luana Maisa",
+            "email": "luana.maisa.santos@hotmail.com",
+            "homepage": "https://www.upinside.com.br",
+            "role": "Nutritionist"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.7.1"
+    },
+    "config": {
+        "vendor-dir": "lib_ext"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Notification\\": "_app"
+        }
+    }
+}
