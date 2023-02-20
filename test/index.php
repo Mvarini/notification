@@ -5,21 +5,21 @@ use Notification\Email;
 
 $novoEmail  = new Email(
     2,
-    "mail.2tx.com.br",
-    "marciel@2tx.com.br",
-    "@Varini#!2020",
+    "mail.teste.com.br",
+    "teste@teste.com.br",
+    "@teste123",
     "ssl",
     465,
-    "marciel@2tx.com.br",
-    "Equipe Marciel"
+    "teste@teste.com",
+    "Equipe Teste"
 );
 $novoEmail->sendMail(
     "Assunto de teste",
     "<p>Esse é um e-mail de <b>teste</b></p>",
-    "marciel@2tx.com.br",
-    "Marciel",
-    "marciel_mav@hotmail.com",
-    "Marciel"
+    "teste@teste.com.br",
+    "Teste",
+    "teste@teste.com.br",
+    "Teste"
 );
 
 var_dump($novoEmail);
